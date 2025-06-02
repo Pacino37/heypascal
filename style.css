@@ -123,3 +123,11 @@ footer {
   color: #777;
 }
 Add style.css with main styling
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #333;
+}
+
