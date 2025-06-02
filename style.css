@@ -1,3 +1,63 @@
+/* Global dark theme styles */
+body {
+  background-color: #121212; /* fallback if image doesn't load */
+  background-image: url('background1.jpg'); /* your uploaded image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header & Navigation */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00bcd4;
+}
+
+/* Section content */
+main {
+  padding: 40px;
+  background-color: rgba(18, 18, 18, 0.85); /* semi-transparent dark */
+  border-radius: 8px;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+h1, h2 {
+  color: #ffffff;
+}
+
+p, li {
+  color: #ddd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #aaa;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 body {
   background-image: url('background1.jpg'); /* Replace with your exact filename */
   background-size: cover;
