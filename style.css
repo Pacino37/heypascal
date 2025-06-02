@@ -1,4 +1,15 @@
 body {
+  background-image: url('background1.jpg'); /* Replace with your exact filename */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white; /* Optional: ensures readability */
+  margin: 0;
+  padding: 0;
+}
+
+body {
   background-image: url('bg.jpg'); /* Replace with your image name */
   background-size: cover;
   background-position: center;
