@@ -1,3 +1,27 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: #007bff;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
 /* Global dark theme styles */
 body {
   background-color: #121212; /* fallback if image doesn't load */
