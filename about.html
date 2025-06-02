@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - Pacino37</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Welcome - Pacino37</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       background-color: #f8f9fa;
-      margin: 0;
-      padding: 0;
       color: #333;
     }
 
@@ -28,47 +27,42 @@
       font-weight: bold;
     }
 
-    .about-section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 2rem;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
+    nav a:hover {
+      text-decoration: underline;
     }
 
-    .profile-pic {
-      width: 150px;
-      height: 150px;
+    .intro-section {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+    }
+
+    .main-profile-pic {
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
       object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       margin-bottom: 1rem;
     }
 
-    .download-btn {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.8rem 1.5rem;
-      background-color: #2c3e50;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background 0.3s;
+    .intro-section h2 {
+      font-size: 1.8rem;
+      color: #2c3e50;
     }
 
-    .download-btn:hover {
-      background-color: #1a252f;
+    .intro-section p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
+      margin-top: 2rem;
       color: #888;
       font-size: 0.9rem;
-      background-color: #f0f0f0;
-      margin-top: 3rem;
     }
   </style>
 </head>
@@ -78,26 +72,18 @@
     <h1>Welcome to Pacino37</h1>
     <nav>
       <a href="index.html">Home</a>
+      <a href="about.html">About</a>
       <a href="blog.html">Blog</a>
       <a href="services.html">Services</a>
     </nav>
   </header>
 
-  <section class="about-section">
-    <img src="profile.jpg" alt="Pacino37 Profile Picture" class="profile-pic">
-    <h2>About Me</h2>
+  <section class="intro-section">
+    <img src="profile.jpg" alt="Pacino37" class="main-profile-pic">
+    <h2>Hello, I'm Pacino37</h2>
     <p>
-      I'm a results-driven Marketing Management graduate with over 5 years of hands-on experience in sales, marketing, and business development. I’ve worked across a range of industries — from hospitality and recruitment to manufacturing — bringing energy and strategic focus to every project.
+      Marketing strategist, business developer, and sales growth specialist. I help businesses grow through data-driven strategies and strong customer connections.
     </p>
-    <p>
-      My strengths lie in lead generation, proposal writing, outbound cold calling, customer relationship management, and crafting data-driven marketing strategies. I thrive on solving problems, adapting quickly, and delivering measurable results that drive growth.
-    </p>
-    <p>
-      Whether it's connecting with clients or building brand momentum, I bring passion, precision, and a goal-oriented mindset to everything I do.
-    </p>
-
-    <!-- ✅ Download CV Button -->
-    <a href="cv-pacino37.pdf" class="download-btn" download>Download My CV</a>
   </section>
 
   <footer>
