@@ -3,97 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blog Post - The Advantage of Marketing on the Economy</title>
+  <title>The Advantage of Marketing on the Economy | Pacino37</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
       color: #333;
       line-height: 1.6;
+      padding: 1rem;
     }
+
     header, footer {
       text-align: center;
-      padding: 1rem;
       background-color: #2c3e50;
       color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
       margin-bottom: 2rem;
-      border-radius: 8px;
     }
-    h1 {
-      margin: 0;
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
+
     nav a {
       color: white;
-      margin: 0 1rem;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
     h2 {
       color: #2c3e50;
-      margin-top: 1.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
+
+    h3 {
+      margin-top: 2rem;
+      color: #2c3e50;
+      font-size: 1.4rem;
+    }
+
     ol {
       padding-left: 1.2rem;
+      margin-top: 1rem;
     }
-    section {
-      background: #f9f9f9;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+
+    ol li {
+      margin-bottom: 1.5rem;
+    }
+
+    strong {
+      display: inline-block;
+      margin-bottom: 0.3rem;
+      color: #007acc;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Blog Post</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="services.html">Services</a>
-  </nav>
-</header>
+  <header>
+    <h1>Blog Post</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
 
-<section>
-  <h2>The Advantage of Marketing on the Economy</h2>
-  <p>Marketing is often seen as a tool for selling products or building brands — and while that’s true, its impact goes far beyond individual businesses. In fact, marketing plays a critical role in driving economic growth, stimulating innovation, and creating employment opportunities.</p>
+  <main>
+    <h2>The Advantage of Marketing on the Economy</h2>
+    <p>Marketing is often seen as a tool for selling products or building brands — and while that’s true, its impact goes far beyond individual businesses. In fact, marketing plays a critical role in driving economic growth, stimulating innovation, and creating employment opportunities.</p>
 
-  <ol>
-    <li>
-      <strong>Stimulates Business Growth</strong><br />
-      Marketing helps businesses connect with customers by identifying their needs and promoting solutions. As more people become aware of a product or service, demand increases — and with increased demand comes more sales, more revenue, and ultimately, business expansion. This contributes directly to a healthier economy.
-    </li>
-    <li>
-      <strong>Creates Jobs</strong><br />
-      Every successful marketing campaign requires skilled professionals: marketers, graphic designers, content creators, social media managers, and more. As businesses grow, they hire more staff, not just in marketing but across other departments — contributing to lower unemployment and higher household incomes.
-    </li>
-    <li>
-      <strong>Drives Innovation and Competition</strong><br />
-      Marketing encourages businesses to innovate. In the race to stand out, companies develop better products, improve services, and adopt new technologies. This competitive environment fosters creativity and ensures that consumers have access to quality and affordable options — strengthening economic activity.
-    </li>
-    <li>
-      <strong>Boosts Consumer Spending</strong><br />
-      Effective marketing builds brand awareness and trust, which increases consumer confidence. Confident consumers are more likely to spend, especially when they feel connected to the brand. This spending cycle is crucial in driving economic momentum in both local and global markets.
-    </li>
-    <li>
-      <strong>Supports Small and Medium Enterprises (SMEs)</strong><br />
-      Digital marketing, especially, has made it easier and more affordable for SMEs to reach wide audiences. This empowers smaller businesses to compete on a more level playing field, create jobs, and contribute significantly to GDP.
-    </li>
-  </ol>
+    <ol>
+      <li>
+        <strong>Stimulates Business Growth</strong>
+        Marketing helps businesses connect with customers by identifying their needs and promoting solutions. As more people become aware of a product or service, demand increases — and with increased demand comes more sales, more revenue, and ultimately, business expansion. This contributes directly to a healthier economy.
+      </li>
+      <li>
+        <strong>Creates Jobs</strong>
+        Every successful marketing campaign requires skilled professionals: marketers, graphic designers, content creators, social media managers, and more. As businesses grow, they hire more staff, not just in marketing but across other departments — contributing to lower unemployment and higher household incomes.
+      </li>
+      <li>
+        <strong>Drives Innovation and Competition</strong>
+        Marketing encourages businesses to innovate. In the race to stand out, companies develop better products, improve services, and adopt new technologies. This competitive environment fosters creativity and ensures that consumers have access to quality and affordable options — strengthening economic activity.
+      </li>
+      <li>
+        <strong>Boosts Consumer Spending</strong>
+        Effective marketing builds brand awareness and trust, which increases consumer confidence. Confident consumers are more likely to spend, especially when they feel connected to the brand. This spending cycle is crucial in driving economic momentum in both local and global markets.
+      </li>
+      <li>
+        <strong>Supports Small and Medium Enterprises (SMEs)</strong>
+        Digital marketing, especially, has made it easier and more affordable for SMEs to reach wide audiences. This empowers smaller businesses to compete on a more level playing field, create jobs, and contribute significantly to GDP.
+      </li>
+    </ol>
 
-  <h3>Conclusion</h3>
-  <p>Marketing isn’t just about advertising — it’s a vital engine behind economic growth. From job creation to driving innovation, marketing has a ripple effect that supports entire industries and economies. By investing in strategic marketing, businesses don’t just grow — they help build stronger economies for everyone.</p>
-</section>
+    <h3>Conclusion</h3>
+    <p>Marketing isn’t just about advertising — it’s a vital engine behind economic growth. From job creation to driving innovation, marketing has a ripple effect that supports entire industries and economies. By investing in strategic marketing, businesses don’t just grow — they help build stronger economies for everyone.</p>
+  </main>
 
-<footer>
-  &copy; 2025 Pacino37. All rights reserved.
-</footer>
+  <footer>
+    &copy; 2025 Pacino37. All rights reserved.
+  </footer>
 
 </body>
 </html>
