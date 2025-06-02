@@ -1,3 +1,12 @@
+body {
+  background-image: url('bg.jpg'); /* Replace with your image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white; /* Optional: white text for contrast */
+}
+
 /* Base reset */
 * {
   margin: 0;
