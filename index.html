@@ -1,49 +1,62 @@
-<a href="cv.html">📘 View My CV</a>
-
-<a href="Curriculum Vitae 2025 (PASCAL T.).docx" download>📄 Download My CV (Word Document)</a>
-
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="contact.html">Contact</a> |
-  <a href="blog.html">Blog</a> |
-  <a href="MyStory.docx" download>Download My Story</a>
-</nav>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="HeyPascal - Personal website of Pacino37" />
-  <title>HeyPascal - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pascal's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>HeyPascal</h1>
-    <p class="tagline">In God is Power, I flourish...</p>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>In God is Power I flourish</h1>
+    <!-- Navigation removed as per your request -->
   </header>
 
+  <section class="hero">
+    <h2>Hi, I'm Pascal</h2>
+    <p>A passionate marketer & business development based in Accra</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
+
   <main>
-    <section class="intro">
-      <h2>Welcome!</h2>
-      <p>Hello, I'm Pascal. This is my personal website where I share insights, ideas, and inspiration. Whether it's faith, personal growth, or creativity, you'll find it here.</p>
-      <a class="button" href="blog.html">Read My Blog</a>
+    <section>
+      <h2>About Me</h2>
+      <p>
+        I am dedicated to helping businesses grow with effective marketing strategies and business development.
+      </p>
     </section>
 
-    <section class="image">
-      <img src="White Angel Gone Rogue.png" alt="HeyPascal Logo or Banner" style="max-width: 100%; height: auto;" />
+    <section>
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project One</h3>
+        <p>Description of project one.</p>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>Description of project two.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        
+        <label for="message">Message:</label><br />
+        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+        
+        <button type="submit" class="btn">Send</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 HeyPascal. All rights reserved.</p>
+    <p>&copy; 2025 Pascal. All rights reserved.</p>
   </footer>
 </body>
 </html>
