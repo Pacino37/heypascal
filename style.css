@@ -1,186 +1,4 @@
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 20px auto;
-  display: block;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background: #f8f9fa;
-  color: #333;
-}
-
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
-  color: white;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background: white;
-  color: #007bff;
-  text-decoration: none;
-  border-radius: 8px;
-  margin-top: 20px;
-}
-
-/* Global dark theme styles */
-body {
-  background-color: #121212; /* fallback if image doesn't load */
-  background-image: url('background1.jpg'); /* your uploaded image */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  color: #ffffff;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-/* Header & Navigation */
-header {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #333;
-}
-
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: #00bcd4;
-}
-
-/* Section content */
-main {
-  padding: 40px;
-  background-color: rgba(18, 18, 18, 0.85); /* semi-transparent dark */
-  border-radius: 8px;
-  max-width: 900px;
-  margin: 40px auto;
-}
-
-h1, h2 {
-  color: #ffffff;
-}
-
-p, li {
-  color: #ddd;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #aaa;
-  font-size: 14px;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-body {
-  background-image: url('background1.jpg'); /* Replace with your exact filename */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  color: white; /* Optional: ensures readability */
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-image: url('bg.jpg'); /* Replace with your image name */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  color: white; /* Optional: white text for contrast */
-}
-
-/* Base reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-  padding: 20px;
-}
-
-header {
-  background-color: #1e3a8a;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 10px;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: #fff;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-main {
-  max-width: 800px;
-  margin: 30px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-section, article {
-  margin-bottom: 30px;
-}
-
-h2 {
-  color: #1e3a8a;
-  margin-bottom: 10px;
-}
-
-.project {
-  padding: 15px;
-  border-left: 5px solid #1e3a8a;
-  background: #f9f9f9;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-footer {
-  text-align: center;
-  margin-top: 40px;
-  color: #777;
-  padding: 20px;
-}
-/* General Reset */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -190,36 +8,98 @@ footer {
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background: #f9f9f9;
-  color: #333;
+  background-image: url('bg.jpg'); /* <- Make sure this matches your uploaded image name */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
   padding: 20px;
 }
 
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay to enhance text contrast */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: white;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+/* Header */
 header {
   background: #1e3a8a;
   color: white;
   padding: 20px;
   text-align: center;
+  border-radius: 10px;
+}
+
+/* Navigation */
+nav {
+  margin-top: 10px;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Section */
 main {
   max-width: 800px;
-  margin: 20px auto;
-  background: white;
+  margin: 30px auto;
   padding: 20px;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #333;
 }
 
 h2 {
   color: #1e3a8a;
 }
 
+/* Projects */
 .project {
   border: 1px solid #ddd;
   padding: 15px;
@@ -228,18 +108,12 @@ h2 {
   background: #fafafa;
 }
 
+/* Footer */
 footer {
   text-align: center;
-  margin-top: 40px;
   padding: 20px;
-  color: #777;
+  color: #aaa;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin-top: 40px;
 }
-Add style.css with main styling
-body {
-  font-family: Arial, sans-serif;
-}
-
-h1, h2 {
-  color: #333;
-}
-
