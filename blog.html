@@ -49,9 +49,33 @@
       margin-top: 0;
     }
 
-    .post p {
+    .post p, .post li {
       line-height: 1.6;
       font-size: 1rem;
+    }
+
+    .expandable {
+      margin-bottom: 1rem;
+    }
+
+    .expand-button {
+      background-color: #bb86fc;
+      color: #121212;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .expand-button:hover {
+      background-color: #9a6be9;
+    }
+
+    .expand-content {
+      display: none;
+      margin-top: 0.5rem;
     }
 
     footer {
@@ -74,50 +98,12 @@
 
   <main>
     <article class="post">
-      <h2>The Power of Marketing in Business Growth</h2>
-      <p>
-        Marketing is not just about selling products — it’s about telling a story, building a connection, and positioning your brand in the minds of your target audience. 
-        In today’s competitive landscape, businesses that invest in strategic marketing see stronger brand recognition, increased sales, and long-term customer loyalty.
-      </p>
-      <p>
-        Whether you're a startup or an established company, a strong marketing strategy helps define your value proposition, understand customer behavior, and leverage channels such as social media, email, and SEO to drive engagement. 
-        The right message, delivered to the right people at the right time, is what propels growth.
-      </p>
-    </article>
-
-    <article class="post">
-      <h2>How to Build Strong Customer Relationships</h2>
-      <p>
-        Customer relationships are at the heart of every successful business. Beyond transactions, clients crave authentic connections and a sense that they matter. 
-        Listening actively to customer feedback, responding quickly to concerns, and offering real value are the building blocks of lasting trust.
-      </p>
-      <p>
-        One key strategy is personalization. From tailored email follow-ups to remembering customer preferences, these small gestures make a big difference. 
-        When you focus on relationships instead of just sales, you turn one-time buyers into loyal brand ambassadors.
-      </p>
-    </article>
-
-    <article class="post">
       <h2>5 Tips for Successful Business Development</h2>
       <p>
-        Business development is more than prospecting — it’s a strategic process of identifying new opportunities and turning them into long-term value. 
-        Here are five practical tips to succeed:
+        Business development is a strategic process aimed at creating long-term value for a company. Below are five powerful tips — click each one to explore in depth.
       </p>
-      <ol>
-        <li><strong>Set Clear Goals:</strong> Define what success looks like — whether it's revenue, new clients, or partnerships.</li>
-        <li><strong>Know Your Market:</strong> Do your research. Understand your industry, competitors, and target customer needs.</li>
-        <li><strong>Build Relationships:</strong> Networking is vital. Collaborate, follow up, and nurture potential leads over time.</li>
-        <li><strong>Measure Performance:</strong> Use KPIs like lead conversion rate, deal size, and cycle time to stay on track.</li>
-        <li><strong>Keep Learning:</strong> Stay updated with new tools, strategies, and customer behaviors to adapt and grow.</li>
-      </ol>
-      <p>
-        Business development is a marathon, not a sprint. Stay consistent, stay curious, and stay focused.
-      </p>
-    </article>
-  </main>
 
-  <footer>
-    &copy; 2025 Pascal Tuyishime. All rights reserved.
-  </footer>
-</body>
-</html>
+      <div class="expandable">
+        <button class="expand-button" onclick="toggleContent(this)">1. Set Clear Goals</button>
+        <div class="expand-content">
+          <p>Clearly defined goals provide directio
