@@ -1,117 +1,97 @@
-/* Global Styles */
-body {
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #121212;
-  color: white;
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1rem;
 }
 
+/* Body and Typography */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Header */
 header {
+  background-color: #1f1f1f;
+  color: #00ff99;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 1.5rem 0;
-  border-bottom: 1px solid #333;
 }
 
 nav {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 nav a {
-  color: white;
-  margin: 0 15px;
+  margin: 0 1rem;
+  color: #00ff99;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   text-decoration: underline;
 }
 
-h1, h2 {
-  margin-top: 0;
-}
-
-.hero {
+/* Section Title */
+.services-section {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
   text-align: center;
-  padding: 2rem 1rem;
 }
 
-.hero-img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  border: 3px solid #bb86fc;
+.services-section h2 {
+  font-size: 2rem;
+  color: #00ff99;
+  margin-bottom: 2rem;
 }
 
-.btn {
-  display: inline-block;
-  margin: 0.5rem 0.75rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #bb86fc;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
+/* Grid Layout for Services */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Service Card */
+.service-card {
+  background-color: #1f1f1f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 255, 153, 0.1);
+  padding: 2rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 255, 153, 0.2);
+}
+
+.service-card h3 {
+  margin-top: 0;
+  color: #00ff99;
+  font-size: 1.5rem;
+}
+
+.service-card p {
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  color: #cccccc;
 }
 
-.btn:hover {
-  background-color: #985eff;
-}
-
-main section {
-  margin-bottom: 3rem;
-}
-
-form label {
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 0.5rem;
-  border-radius: 5px;
-  border: none;
-  margin-top: 0.25rem;
-  margin-bottom: 1rem;
-  font-size: 1rem;
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: 2px solid #bb86fc;
-  background-color: #222;
-  color: white;
-}
-
-button.btn {
-  width: 100%;
-  max-width: 150px;
-  background-color: #bb86fc;
-}
-
-button.btn:hover {
-  background-color: #985eff;
-}
-
+/* Footer */
 footer {
   text-align: center;
-  padding: 1rem 0;
-  color: #777;
+  padding: 1rem;
+  margin-top: 3rem;
+  color: #888;
   font-size: 0.9rem;
-  border-top: 1px solid #333;
+  background-color: #1a1a1a;
 }
