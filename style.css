@@ -8,8 +8,8 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  background-color: #121212;
+  color: #ffffff;
 }
 
 /* Transparent background image in header */
@@ -22,7 +22,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.3;
+  opacity: 0.15;
   z-index: 0;
 }
 
@@ -31,8 +31,8 @@ header {
   position: relative;
   text-align: center;
   padding: 60px 20px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
+  background-color: rgba(0, 128, 0, 0.6); /* Green with transparency */
+  color: #ffffff;
   overflow: hidden;
 }
 
@@ -58,7 +58,7 @@ header p {
 }
 
 .nav-buttons a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -66,18 +66,18 @@ header p {
 }
 
 .nav-buttons a:hover {
-  color: #ffd700;
+  color: #32cd32; /* Lime green on hover */
 }
 
 /* Main content */
 main {
   padding: 40px 20px;
-  background-color: #fff;
-  color: #333;
+  background-color: #1e1e1e;
+  color: #ffffff;
 }
 
 main h2 {
-  color: #0056b3;
+  color: #00ff7f; /* Spring green headings */
   margin-bottom: 10px;
 }
 
@@ -94,9 +94,34 @@ main ul li {
   margin-bottom: 10px;
 }
 
+/* Forms */
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #333;
+  border: 1px solid #555;
+  color: #fff;
+}
+
+form button {
+  background-color: #00cc66;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00994d;
+}
+
 /* Footer */
 footer {
-  background-color: #0056b3;
+  background-color: #004d26;
   color: white;
   text-align: center;
   padding: 20px;
