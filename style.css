@@ -34,6 +34,38 @@ header p {
   margin-top: 0.5rem;
 }
 
+/* Navigation Buttons */
+.nav-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-buttons a {
+  background-color: #50fa7b;
+  color: #0d2b1e;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+.nav-buttons a i {
+  font-size: 1rem;
+}
+
+.nav-buttons a:hover {
+  background-color: #37d76e;
+  transform: translateY(-2px);
+}
+
 /* Hero Image */
 .hero-image {
   margin-top: 1.5rem;
@@ -111,5 +143,10 @@ footer {
 
   .hero-image img {
     max-width: 180px;
+  }
+
+  .nav-buttons a {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
   }
 }
