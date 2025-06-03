@@ -5,10 +5,112 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pascal's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('city-background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    header {
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #bb86fc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #9a67ea;
+    }
+
+    section {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 0.9rem;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    .contact-details {
+      display: none;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .contact-details.show {
+      display: block;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>In God is Power I flourish</h1>
+    <h1>In God is Power I Flourish</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="blog.html">Blog</a>
@@ -21,14 +123,19 @@
     <h2>Hi, I'm Pascal</h2>
     <p>A passionate marketer & business development professional based in Accra</p>
     <a href="Pascal_CV.pdf" download class="btn">Download CV</a>
-    <a href="#contact" class="btn">Hire Me</a>
+    <button class="btn" onclick="document.getElementById('contactDetails').classList.toggle('show')">Hire Me</button>
+
+    <div id="contactDetails" class="contact-details">
+      <p>📞 +233 538624987</p>
+      <p>📧 pacinot@gmail.com</p>
+    </div>
   </section>
 
   <main>
     <section>
       <h2>About Me</h2>
       <p>
-        Results-driven Marketing Management graduate with over 5 years of experience in sales, marketing, and business development across industries such as hospitality, recruitment, and manufacturing. Skilled in lead generation, proposal writing, outbound cold calling, customer relationship management, and strategic marketing. Adaptable, solution-focused, and delivering measurable results.
+        I’m a results-driven Marketing Management graduate with 5+ years of experience in sales, marketing, and business development across diverse industries including hospitality, recruitment, and manufacturing. I specialize in lead generation, strategic cold outreach, proposal writing, and customer relationship management. I bring a solution-focused mindset and a passion for growth — always aiming to deliver measurable results that help businesses scale.
       </p>
     </section>
 
@@ -36,21 +143,32 @@
       <h2>Contact Me</h2>
       <form>
         <label for="name">Name:</label><br />
-        <input type="text" id="name" name="name" required /><br /><br />
-        
+        <input type="text" id="name" name="name" required /><br />
+
         <label for="email">Email:</label><br />
-        <input type="email" id="email" name="email" required /><br /><br />
-        
+        <input type="email" id="email" name="email" required /><br />
+
         <label for="message">Message:</label><br />
-        <textarea id="message" name="message" rows="5" required></textarea><br /><br />
-        
+        <textarea id="message" name="message" rows="5" required></textarea><br />
+
         <button type="submit" class="btn">Send</button>
       </form>
     </section>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn">🔗</a>
+      <a href="https://wa.me/233538624987" target="_blank" title="WhatsApp">💬</a>
+      <a href="https://youtube.com/@yourchannel" target="_blank" title="YouTube">▶️</a>
+      <a href="https://x.com/yourusername" target="_blank" title="X/Twitter">❌</a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Pascal. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Toggle contact visibility for "Hire Me"
+  </script>
 </body>
 </html>
