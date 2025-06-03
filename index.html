@@ -6,18 +6,18 @@
   <title>Pascal's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <style>
+    /* Dark theme base */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('city-background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      color: white;
+      background-color: #121212;
+      color: #ffffff;
     }
 
     header {
-      background-color: rgba(0, 0, 0, 0.8);
-      text-align: center;
+      background-color: #1f1f1f;
       padding: 2rem 1rem;
+      text-align: center;
     }
 
     nav a {
@@ -28,13 +28,13 @@
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #bb86fc;
     }
 
     .hero {
       text-align: center;
       padding: 3rem 1rem;
-      background-color: rgba(0, 0, 0, 0.6);
+      background-color: #222;
     }
 
     .hero-img {
@@ -55,6 +55,7 @@
       border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
+      cursor: pointer;
     }
 
     .btn:hover {
@@ -62,7 +63,7 @@
     }
 
     section {
-      background-color: rgba(0, 0, 0, 0.7);
+      background-color: #1e1e1e;
       margin: 2rem auto;
       max-width: 800px;
       padding: 2rem;
@@ -75,13 +76,15 @@
       margin-top: 8px;
       margin-bottom: 20px;
       border-radius: 5px;
-      border: none;
+      border: 1px solid #444;
+      background-color: #333;
+      color: white;
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: #1f1f1f;
       font-size: 0.9rem;
     }
 
@@ -95,6 +98,10 @@
       font-size: 1.5rem;
       color: white;
       text-decoration: none;
+    }
+
+    .social-links a:hover {
+      color: #bb86fc;
     }
 
     .contact-details {
@@ -123,7 +130,7 @@
     <h2>Hi, I'm Pascal</h2>
     <p>A passionate marketer & business development professional based in Accra</p>
     <a href="Pascal_CV.pdf" download class="btn">Download CV</a>
-    <button class="btn" onclick="document.getElementById('contactDetails').classList.toggle('show')">Hire Me</button>
+    <button class="btn" onclick="toggleContact()">Hire Me</button>
 
     <div id="contactDetails" class="contact-details">
       <p>📞 +233 538624987</p>
@@ -168,7 +175,9 @@
   </footer>
 
   <script>
-    // Toggle contact visibility for "Hire Me"
+    function toggleContact() {
+      document.getElementById('contactDetails').classList.toggle('show');
+    }
   </script>
 </body>
 </html>
